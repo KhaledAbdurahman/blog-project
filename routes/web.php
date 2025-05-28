@@ -9,8 +9,6 @@ Route::controller(ThemeController::class)->name('theme.')->group(function () {
     Route::get('/category', 'category')->name('category');
     Route::get('/contact', 'contact')->name('contact');
     Route::get('/single-Blog', 'singleBlog')->name('singleBlog');
-    Route::get('/login', 'login')->name('login');
-    Route::get('/register', 'register')->name('register');
 });
 
 // Route::get('/', function () {
