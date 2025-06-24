@@ -27,16 +27,17 @@ cd multi-user-blog
 composer install
 cp .env.example .env
 php artisan key:generate
+```
+
 🔧 Configuration
 Update .env with your database credentials.
 
 (Optional) Configure mail settings if email verification or notifications are used.
 
 📂 Migrate & Seed Database
-bash
-Copy
-Edit
+```
 php artisan migrate --seed
+```
 This will create the required tables and seed an initial admin user if configured in DatabaseSeeder.php.
 
 🔑 Admin Access
@@ -49,10 +50,9 @@ Password: password
 Change credentials after first login.
 
 🧪 Run Development Server
-bash
-Copy
-Edit
+```
 php artisan serve
+```
 Access the app at: http://localhost:8000
 
 📋 Routes Overview
@@ -69,11 +69,11 @@ Users can create, edit, and delete only their own posts.
 Admins (if enabled) can manage all posts and users.
 
 🧰 Commands
-bash
-Copy
-Edit
+```
 php artisan migrate:fresh --seed       # Reset and seed the database
 php artisan make:model Blog -mcr       # Create Blog model with migration, controller, resource
+```
+
 ✅ To-Do / Improvements
  Add WYSIWYG editor for blog content
 
